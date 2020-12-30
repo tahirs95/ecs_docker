@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  app:
+    build:
+    # path to access Dockerfile
+      context: .
+    ports: 
+    # map local -> docker image port
+      - "8099:8099"
+    volumes:
+    # mount local folder -> docker image folder
+      - ./app:/app
+    command: >
+      sh -c "python main.py"
