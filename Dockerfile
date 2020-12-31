@@ -14,4 +14,5 @@ RUN mkdir /app
 WORKDIR /app
 COPY . /app
 EXPOSE 8099
+CMD ["python", "app/main.py"]
 

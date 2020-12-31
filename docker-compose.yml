@@ -11,5 +11,3 @@ services:
     volumes:
     # mount local folder -> docker image folder
       - ./app:/app
-    command: >
-      sh -c "python main.py"
